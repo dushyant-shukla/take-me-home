@@ -1,0 +1,8 @@
+{
+   "entities":[
+		{
+         "archetype":"start-screen-player",
+         "file":"./Assets/archetypes/game-over-screen-player.json"
+		}
+   ]
+}

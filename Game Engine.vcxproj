@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9AD7F407-7E41-4D2C-BFEC-A3A707437956}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GameEngine1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)\libraries\free-type;$(SolutionDir)libraries\jsoncpp\json;$(SolutionDir)libraries\;$(SolutionDir)libraries\glad\include;$(SolutionDir)libraries\SDL2.0 Lib\include;$(SolutionDir)Header;$(SolutionDir)Header\Manager;$(SolutionDir)Header\Component;$(SolutionDir)Header\Maths;$(SolutionDir)libraries\glm\glm-0.9.9.6\glm;$(SolutionDir)libraries\glfw\X86\include;$(SolutionDir)Header\Levels</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)\libraries\free-type;$(SolutionDir)libraries\jsoncpp\debug;$(SolutionDir)libraries\glfw\X86;$(SolutionDir)\libraries\SDL2.0 Lib\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freetype.lib;jsoncpp.lib;opengl32.lib;glfw3.lib;SDL2.lib;SDL2main.lib;SDL2test.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(SolutionDir)libraries\jsoncpp\debug\jsoncpp.dll" "$(SolutionDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)Header\Levels;$(SolutionDir)libraries\jsoncpp\json;$(SolutionDir)libraries\;$(SolutionDir)libraries\glad\include;$(SolutionDir)libraries\SDL2.0 Lib\include;$(SolutionDir)Header;$(SolutionDir)Header\Manager;$(SolutionDir)Header\Component;$(SolutionDir)Header\Maths;$(SolutionDir)libraries\glm\glm-0.9.9.6\glm;$(SolutionDir)libraries\glfw\X86\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)libraries\jsoncpp;$(SolutionDir)libraries\glfw\X86;$(SolutionDir)\libraries\SDL2.0 Lib\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>jsoncpp.lib;opengl32.lib;glfw3.lib;SDL2.lib;SDL2main.lib;SDL2test.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)\libraries\free-type;$(SolutionDir)libraries\jsoncpp\json;$(SolutionDir)libraries\;$(SolutionDir)libraries\glad\include;$(SolutionDir)libraries\SDL2.0 Lib\include;$(SolutionDir)Header;$(SolutionDir)Header\Manager;$(SolutionDir)Header\Component;$(SolutionDir)Header\Maths;$(SolutionDir)libraries\glm\glm-0.9.9.6\glm;$(SolutionDir)libraries\glfw\X86\include;$(SolutionDir)Header\Levels</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)\libraries\free-type;$(SolutionDir)libraries\jsoncpp\release;$(SolutionDir)libraries\glfw\X86;$(SolutionDir)\libraries\SDL2.0 Lib\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freetype.lib;jsoncpp.lib;opengl32.lib;glfw3.lib;SDL2.lib;SDL2main.lib;SDL2test.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(SolutionDir)libraries\jsoncpp\release\jsoncpp.dll" "$(SolutionDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)Header\Levels;$(SolutionDir)libraries\jsoncpp\json;$(SolutionDir)libraries\;$(SolutionDir)libraries\glad\include;$(SolutionDir)libraries\SDL2.0 Lib\include;$(SolutionDir)Header;$(SolutionDir)Header\Manager;$(SolutionDir)Header\Component;$(SolutionDir)Header\Maths;$(SolutionDir)libraries\glm\glm-0.9.9.6\glm;$(SolutionDir)libraries\glfw\X86\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>NotSet</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)libraries\jsoncpp;$(SolutionDir)libraries\glfw\X86;$(SolutionDir)\libraries\SDL2.0 Lib\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>jsoncpp.lib;opengl32.lib;glfw3.lib;SDL2.lib;SDL2main.lib;SDL2test.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="glad.c" />
+    <ClCompile Include="Header\Texture2D.cpp" />
+    <ClCompile Include="libraries\stb_image.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Source\Component\Body.cpp" />
+    <ClCompile Include="Source\Component\Component.cpp" />
+    <ClCompile Include="Source\Component\Controller.cpp" />
+    <ClCompile Include="Source\Component\Boundary.cpp" />
+    <ClCompile Include="Source\Component\FireBullet.cpp" />
+    <ClCompile Include="Source\Component\Health.cpp" />
+    <ClCompile Include="Source\Component\Patroling.cpp" />
+    <ClCompile Include="Source\Component\Jumping.cpp" />
+    <ClCompile Include="Source\Component\Sprite.cpp" />
+    <ClCompile Include="Source\Component\TimedMissile.cpp" />
+    <ClCompile Include="Source\Component\Transform.cpp" />
+    <ClCompile Include="Source\Component\UpDown.cpp" />
+    <ClCompile Include="Source\FrameRateController.cpp" />
+    <ClCompile Include="Source\GameObject.cpp" />
+    <ClCompile Include="Source\GameStatePlay.cpp" />
+    <ClCompile Include="Source\GameStateStart.cpp" />
+    <ClCompile Include="Source\Levels\Map.cpp" />
+    <ClCompile Include="Source\Manager\CollisionManager.cpp" />
+    <ClCompile Include="Source\Manager\EventManager.cpp" />
+    <ClCompile Include="Source\Manager\GameObjectManager.cpp" />
+    <ClCompile Include="Source\Manager\GameStateManager.cpp" />
+    <ClCompile Include="Source\Manager\InputManager.cpp" />
+    <ClCompile Include="Source\Manager\LevelManager.cpp" />
+    <ClCompile Include="Source\Manager\PhysicsManager.cpp" />
+    <ClCompile Include="Source\Manager\RenderManager.cpp" />
+    <ClCompile Include="Source\Manager\ResourceManager.cpp" />
+    <ClCompile Include="Source\Maths\LineSegment2D.cpp" />
+    <ClCompile Include="Source\Maths\Vector2D.cpp" />
+    <ClCompile Include="Source\ObjectFactory.cpp" />
+    <ClCompile Include="Source\ShaderProgram.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header\Component\Component.h" />
+    <ClInclude Include="Header\Component\Controller.h" />
+    <ClInclude Include="Header\Component\Boundary.h" />
+    <ClInclude Include="Header\Component\FireBullet.h" />
+    <ClInclude Include="Header\Component\Health.h" />
+    <ClInclude Include="Header\Component\Patroling.h" />
+    <ClInclude Include="Header\Component\Jumping.h" />
+    <ClInclude Include="Header\Component\Sprite.h" />
+    <ClInclude Include="Header\Component\TimedMissile.h" />
+    <ClInclude Include="Header\Component\Transform.h" />
+    <ClInclude Include="Header\Component\UpDown.h" />
+    <ClInclude Include="Header\Core.h" />
+    <ClInclude Include="Header\FrameRateController.h" />
+    <ClInclude Include="Header\GameObject.h" />
+    <ClInclude Include="Header\GameObjectUtility.h" />
+    <ClInclude Include="Header\GameState.h" />
+    <ClInclude Include="Header\GameStatePlay.h" />
+    <ClInclude Include="Header\GameStateStart.h" />
+    <ClInclude Include="Header\Levels\Map.h" />
+    <ClInclude Include="Header\Levels\TileType.h" />
+    <ClInclude Include="Header\Manager\Body.h" />
+    <ClInclude Include="Header\Manager\CollisionManager.h" />
+    <ClInclude Include="Header\Manager\EventManager.h" />
+    <ClInclude Include="Header\Manager\GameObjectManager.h" />
+    <ClInclude Include="Header\Manager\GameStateManager.h" />
+    <ClInclude Include="Header\Manager\InputManager.h" />
+    <ClInclude Include="Header\Manager\LevelManager.h" />
+    <ClInclude Include="Header\Manager\PhysicsManager.h" />
+    <ClInclude Include="Header\Manager\RenderManager.h" />
+    <ClInclude Include="Header\Manager\ResourceManager.h" />
+    <ClInclude Include="Header\Maths\LineSegment2D.h" />
+    <ClInclude Include="Header\Maths\Vector2D.h" />
+    <ClInclude Include="Header\ObjectFactory.h" />
+    <ClInclude Include="Header\ShaderProgram.h" />
+    <ClInclude Include="Header\Texture2D.h" />
+    <ClInclude Include="libraries\stb_image.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shader.frag" />
+    <None Include="shader.vert" />
+    <None Include="Source\text-shader.frag" />
+    <None Include="Source\text-shader.vert" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,17 @@
+{
+   "archetype":"start-screen-player",
+   "components":[
+	  {
+		 "component":"Sprite",
+         "file":"./Assets/victory-screen.png",
+		 "repeat" : false
+	  },
+	  {
+         "component":"Transform",
+         "pos-x":110.0,
+         "pos-y":50.0,
+         "scale-x":600.0,
+         "scale-y":600.0
+      }
+   ]
+}

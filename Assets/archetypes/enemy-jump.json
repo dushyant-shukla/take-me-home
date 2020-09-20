@@ -1,0 +1,31 @@
+{
+   "archetype":"enemy-jump",
+   "components":[
+      {
+         "component":"Transform",
+         "pos-x":1500.0,
+         "pos-y":514.0,
+         "scale-x":20.0,
+         "scale-y":30.0
+      },
+      {
+         "component":"Sprite",
+         "file":"./Assets/enemy-jump.png"
+      },
+	  {
+         "component":"Body",
+         "mass": 1,
+		 "shape": {
+			"type": "AABB",
+			"size-x": 20.0,
+			"size-y": 30.0
+		 },
+		 "use-force": true,
+		 "walk-speed": 0.0
+      },
+	  {
+		"component":"Jumping",
+		"jump-speed": -400.0
+	  }
+   ]
+}

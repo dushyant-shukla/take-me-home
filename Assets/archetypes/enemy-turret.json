@@ -1,0 +1,33 @@
+{
+   "archetype":"enemy-turret",
+   "components":[
+      {
+         "component":"Transform",
+         "pos-x":398.0,
+         "pos-y":288.0,
+         "scale-x":50.0,
+         "scale-y":32.0
+      },
+      {
+         "component":"Sprite",
+         "file":"./Assets/turret-new.png"
+      },
+	  {
+         "component":"Body",
+         "mass": 0.0,
+		 "shape": {
+			"type": "AABB",
+			"size-x": 50.0,
+			"size-y": 32.0
+		 },
+		 "use-force": false,
+		 "walk-speed": 0.0
+      },
+	  {
+		"component":"Timed-Missile",
+		"timer": 2.0,
+		"missile-archetype-file": "./Assets/archetypes/missile.json",
+		"missile-speed": 400.0
+	  }
+   ]
+}

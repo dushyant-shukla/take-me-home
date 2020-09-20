@@ -1,0 +1,32 @@
+{
+   "archetype":"missile",
+   "components":[
+      {
+         "component":"Sprite",
+         "file":"./Assets/missile.png",
+		 "repeat" : false
+      },
+	  {
+         "component":"Body",
+         "mass": 1,
+		 "shape": {
+			"type": "AABB",
+			"size-x": 20.0,
+			"size-y": 15.0
+		 },
+		 "use-force": false,
+		 "walk-speed": 165,
+		 "jump-speed": 0.0
+      },
+	  {
+         "component":"Transform",
+         "pos-x":0.0,
+         "pos-y":0.0,
+         "scale-x":20.0,
+         "scale-y":15.0
+      },
+	  {
+		"component": "Boundary"
+	  }
+   ]
+}

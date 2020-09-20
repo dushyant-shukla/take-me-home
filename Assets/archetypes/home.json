@@ -1,0 +1,24 @@
+{
+   "archetype":"home",
+   "components":[
+	  {
+         "component":"Body",
+         "mass": 0,
+		 "shape": {
+			"type": "AABB",
+			"size-x": 160.0,
+			"size-y": 96.0
+		 },
+		 "use-force": false,
+		 "walk-speed": 0,
+		 "jump-speed": 0
+      },
+	  {
+         "component":"Transform",
+         "pos-x":2174.00,
+         "pos-y":32.0,
+         "scale-x":160.0,
+         "scale-y":96
+      }
+   ]
+}

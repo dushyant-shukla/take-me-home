@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Source\FrameRateController.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameObject.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Component\Component.cpp">
+      <Filter>source\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Component\Controller.cpp">
+      <Filter>source\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Component\Sprite.cpp">
+      <Filter>source\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Component\Transform.cpp">
+      <Filter>source\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Component\UpDown.cpp">
+      <Filter>source\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Manager\GameObjectManager.cpp">
+      <Filter>source\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Manager\InputManager.cpp">
+      <Filter>source\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Manager\ResourceManager.cpp">
+      <Filter>source\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ObjectFactory.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Manager\PhysicsManager.cpp">
+      <Filter>source\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Component\Body.cpp">
+      <Filter>source\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Manager\CollisionManager.cpp">
+      <Filter>source\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Maths\LineSegment2D.cpp">
+      <Filter>source\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Maths\Vector2D.cpp">
+      <Filter>source\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Manager\EventManager.cpp">
+      <Filter>source\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Manager\RenderManager.cpp">
+      <Filter>source\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ShaderProgram.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="glad.c" />
+    <ClCompile Include="libraries\stb_image.cpp">
+      <Filter>libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="Header\Texture2D.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Levels\Map.cpp">
+      <Filter>source\Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Manager\LevelManager.cpp">
+      <Filter>source\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Component\TimedMissile.cpp">
+      <Filter>source\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Component\Patroling.cpp">
+      <Filter>source\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Component\Jumping.cpp">
+      <Filter>source\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Component\Boundary.cpp">
+      <Filter>source\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Component\FireBullet.cpp">
+      <Filter>source\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Component\Health.cpp">
+      <Filter>source\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Manager\GameStateManager.cpp">
+      <Filter>source\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameStatePlay.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameStateStart.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{47969850-b684-4bf7-a259-5cfa4bda98b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{11aadf14-9468-4623-ac2c-6fb68f368aff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Component">
+      <UniqueIdentifier>{99fd9c1f-b0f7-4e0d-bb62-cd1475b16de7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\Component">
+      <UniqueIdentifier>{1b0076a5-5b18-4979-b041-8d63b65b896c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\Manager">
+      <UniqueIdentifier>{e61f2d9f-c44d-483f-8ec8-b71b1d8bef2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Manager">
+      <UniqueIdentifier>{e3615266-a237-43ad-bff1-5d5dd26bfd47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Maths">
+      <UniqueIdentifier>{bd7c0c57-75aa-45d1-87f5-310b36e4b9b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\Maths">
+      <UniqueIdentifier>{9063528b-dc27-402e-a104-cb11b5f10225}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libraries">
+      <UniqueIdentifier>{5ca4d0c8-17eb-429a-82fa-33c8909dbee4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{a41692e1-efcd-4285-bc8b-41b5b56fc251}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Levels">
+      <UniqueIdentifier>{ccd81534-f010-4464-a21b-96de56592786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\Levels">
+      <UniqueIdentifier>{2700401d-a0bd-4eae-937d-954a2b1a2da2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header\FrameRateController.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\GameObject.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Component\Component.h">
+      <Filter>include\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Component\Controller.h">
+      <Filter>include\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Component\Sprite.h">
+      <Filter>include\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Component\Transform.h">
+      <Filter>include\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Component\UpDown.h">
+      <Filter>include\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Manager\GameObjectManager.h">
+      <Filter>include\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Manager\InputManager.h">
+      <Filter>include\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Manager\ResourceManager.h">
+      <Filter>include\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\ObjectFactory.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Manager\PhysicsManager.h">
+      <Filter>include\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Manager\Body.h">
+      <Filter>include\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Manager\CollisionManager.h">
+      <Filter>include\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Maths\Vector2D.h">
+      <Filter>include\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Manager\EventManager.h">
+      <Filter>include\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Maths\LineSegment2D.h">
+      <Filter>include\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Manager\RenderManager.h">
+      <Filter>include\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\ShaderProgram.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\stb_image.h">
+      <Filter>libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Texture2D.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Levels\Map.h">
+      <Filter>include\Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Manager\LevelManager.h">
+      <Filter>include\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Levels\TileType.h">
+      <Filter>include\Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\GameObjectUtility.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Component\Patroling.h">
+      <Filter>include\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Component\TimedMissile.h">
+      <Filter>include\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Component\Jumping.h">
+      <Filter>include\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Component\Boundary.h">
+      <Filter>include\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Component\FireBullet.h">
+      <Filter>include\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Component\Health.h">
+      <Filter>include\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\GameState.h" />
+    <ClInclude Include="Header\Manager\GameStateManager.h">
+      <Filter>include\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\GameStatePlay.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Core.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\GameStateStart.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shader.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shader.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Source\text-shader.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Source\text-shader.frag">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

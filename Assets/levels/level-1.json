@@ -1,0 +1,225 @@
+{
+   "entities":[
+      {
+         "archetype":"player",
+         "file":"./Assets/archetypes/player.json",
+         "components":[
+            {
+               "component":"Sprite",
+               "file":"./Assets/player.png",
+			   "repeat" : false
+            },
+			{
+				"component":"Body",
+				"mass": 1,
+				"shape": {
+					"type": "AABB",
+					"size-x": 10.0,
+					"size-y": 30.0
+				},
+				"use-force": true
+			},
+			{
+               "component":"Transform",
+               "pos-x":10.0,
+               "pos-y":100.0,
+               "scale-x":10.0,
+               "scale-y":30.0
+            }
+         ]
+      },
+	  {
+         "archetype":"enemy-red",
+         "file":"./Assets/archetypes/enemy-red.json",
+         "components":[
+            {
+               "component":"Sprite",
+               "file":"./Assets/enemy-red.png",
+			   "repeat" : false
+            }
+         ]
+      },
+	  {
+         "archetype":"enemy-turret",
+         "file":"./Assets/archetypes/enemy-turret.json"
+      },
+	  {
+         "archetype":"enemy-turret",
+         "file":"./Assets/archetypes/enemy-turret.json",
+		 "components":[
+			{
+				"component":"Transform",
+				"pos-x":3024.0,
+				"pos-y":416.0,
+				"scale-x":50.0,
+				"scale-y":32.0
+			},
+			{
+				"component":"Missile-Launch",
+				"timer": 2.0
+			}
+		 ]
+      },
+	  {
+         "archetype":"enemy-turret",
+         "file":"./Assets/archetypes/enemy-turret.json",
+		 "components":[
+			{
+				"component":"Transform",
+				"pos-x":2850.0,
+				"pos-y":160.0,
+				"scale-x":50.0,
+				"scale-y":32.0
+			},
+			{
+				"component":"Missile-Launch",
+				"timer": 2.0
+			}
+		 ]
+      },
+	  {
+         "archetype":"enemy-jump",
+         "file":"./Assets/archetypes/enemy-jump.json"
+      },
+	  {
+         "archetype":"enemy-jump",
+         "file":"./Assets/archetypes/enemy-jump.json",
+		 "components":[
+			{
+				"component":"Transform",
+				"pos-x":1800.0,
+				"pos-y":514.0,
+				"scale-x":20.0,
+				"scale-y":30.0
+			}
+		]
+      },
+	  {
+         "archetype":"enemy-jump",
+         "file":"./Assets/archetypes/enemy-jump.json",
+		 "components":[
+			{
+				"component":"Transform",
+				"pos-x":970.0,
+				"pos-y":258.0,
+				"scale-x":20.0,
+				"scale-y":30.0
+			}
+		]
+      },
+	  {
+         "archetype":"enemy-red",
+         "file":"./Assets/archetypes/enemy-red.json",
+		 "components": [
+			{
+				"component":"Transform",
+				"pos-x":1350.0,
+				"pos-y":514.0
+			},
+			{
+				"component":"Body",
+				"mass": 1,
+				"shape": {
+					"type": "AABB",
+					"size-x": 20.0,
+					"size-y": 30.0
+				},
+				"use-force": true,
+				"walk-speed": -200.0
+			}
+		 ]
+      },
+	  {
+         "archetype":"enemy-red",
+         "file":"./Assets/archetypes/enemy-red.json",
+		 "components": [
+			{
+				"component":"Transform",
+				"pos-x":1100.0,
+				"pos-y":290.0
+			},
+			{
+				"component":"Body",
+				"mass": 1,
+				"shape": {
+					"type": "AABB",
+					"size-x": 20.0,
+					"size-y": 30.0
+				},
+				"use-force": true,
+				"walk-speed": -100.0
+			}
+		 ]
+      },
+	  {
+         "archetype":"enemy-red",
+         "file":"./Assets/archetypes/enemy-red.json",
+		 "components": [
+			{
+				"component":"Transform",
+				"pos-x":3147.0,
+				"pos-y":163.0
+			},
+			{
+				"component":"Body",
+				"mass": 1,
+				"shape": {
+					"type": "AABB",
+					"size-x": 20.0,
+					"size-y": 30.0
+				},
+				"use-force": true,
+				"walk-speed": 100.0
+			}
+		 ]
+      },
+	  {
+         "archetype":"enemy-red",
+         "file":"./Assets/archetypes/enemy-red.json",
+		 "components": [
+			{
+				"component":"Transform",
+				"pos-x":1800.0,
+				"pos-y":514.0
+			},
+			{
+				"component":"Body",
+				"mass": 1,
+				"shape": {
+					"type": "AABB",
+					"size-x": 20.0,
+					"size-y": 30.0
+				},
+				"use-force": true,
+				"walk-speed": 230.0
+			}
+		 ]
+      },
+	  {
+         "archetype":"enemy-red",
+         "file":"./Assets/archetypes/enemy-red.json",
+		 "components": [
+			{
+				"component":"Transform",
+				"pos-x":2800.0,
+				"pos-y":514.0
+			},
+			{
+				"component":"Body",
+				"mass": 1,
+				"shape": {
+					"type": "AABB",
+					"size-x": 20.0,
+					"size-y": 30.0
+				},
+				"use-force": true,
+				"walk-speed": 230.0
+			}
+		 ]
+      },
+	  {
+         "archetype":"home",
+         "file":"./Assets/archetypes/home.json"
+      }
+   ]
+}

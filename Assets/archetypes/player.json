@@ -1,0 +1,37 @@
+{
+   "archetype":"player",
+   "components":[
+      {
+         "component":"Sprite",
+         "file":"./Assets/player.png",
+		 "repeat" : false
+      },
+	  {
+         "component":"Controller"
+      },
+	  {
+		 "component":"Fire-Bullet",
+		 "bullet-archetype-file": "./Assets/archetypes/bullet.json",
+		 "bullet-speed": 800.0
+	  },
+	  {
+         "component":"Body",
+         "mass": 1,
+		 "shape": {
+			"type": "AABB",
+			"size-x": 10.0,
+			"size-y": 30.0
+		 },
+		 "use-force": true,
+		 "walk-speed": 165,
+		 "jump-speed": 400
+      },
+	  {
+         "component":"Transform",
+         "pos-x":200.0,
+         "pos-y":200.0,
+         "scale-x":10.0,
+         "scale-y":30.0
+      }
+   ]
+}

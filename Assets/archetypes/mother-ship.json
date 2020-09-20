@@ -1,0 +1,27 @@
+{
+   "archetype":"mother-ship",
+   "components":[
+      {
+         "component":"Transform",
+         "pos-x":2177.0,
+         "pos-y":78.0,
+         "scale-x":50.0,
+         "scale-y":50.0
+      },
+      {
+         "component":"Sprite",
+         "file":"./Assets/mother-ship.png"
+      },
+	  {
+         "component":"Body",
+         "mass": 0.0,
+		 "shape": {
+			"type": "AABB",
+			"size-x": 100.0,
+			"size-y": 100.0
+		 },
+		 "use-force": false,
+		 "walk-speed": 0.0
+      }
+   ]
+}

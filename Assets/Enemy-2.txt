@@ -1,0 +1,10 @@
+Transform
+400.0 150.0
+Sprite
+small-bar.bmp
+UpDown
+0 800
+Body
+0
+Circle
+50

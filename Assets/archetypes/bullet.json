@@ -1,0 +1,32 @@
+{
+   "archetype":"bullet",
+   "components":[
+      {
+         "component":"Sprite",
+         "file":"./Assets/bullet.png",
+		 "repeat" : false
+      },
+	  {
+         "component":"Body",
+         "mass": 1,
+		 "shape": {
+			"type": "AABB",
+			"size-x": 20.0,
+			"size-y": 5.0
+		 },
+		 "use-force": false,
+		 "walk-speed": 250,
+		 "jump-speed": 0.0
+      },
+	  {
+         "component":"Transform",
+         "pos-x":0.0,
+         "pos-y":0.0,
+         "scale-x":20.0,
+         "scale-y":5.0
+      },
+	  {
+		"component": "Boundary"
+	  }
+   ]
+}
