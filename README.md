@@ -14,7 +14,7 @@ Exciting features of the game engine:
 
 ### External Dependencies
 - #### Core:
-  * Programming language: C++
+  * Programming language: C/C++
   * Engine architecture: Entity Component System
   * Serialization: JSON ([jsoncpp](https://github.com/open-source-parsers/jsoncpp))
   * Window Manager: [glfw](https://www.glfw.org/)
